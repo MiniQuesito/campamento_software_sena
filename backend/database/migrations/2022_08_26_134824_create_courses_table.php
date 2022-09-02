@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('weeks',20);
             $table->string('enroll_cost', 8,2);
             $table->string('minimun_skill', 50);
-            $table->foreingId('bootcamp_id')->constrained();
+            $table->foreignId('bootcamp_id')->constrained();
             $table->timestamps();
         });
     }
