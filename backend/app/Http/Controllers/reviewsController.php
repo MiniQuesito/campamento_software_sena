@@ -3,9 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request; 
-use App\Models\Bootcamp;
+use App\Models\Reviews;
 
-class bootcampController extends Controller
+class reviewsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class bootcampController extends Controller
      */
     public function index()
     {
-        return Bootcamp::all();
+        return Reviews::all();
     }
 
     /**
@@ -26,8 +26,8 @@ class bootcampController extends Controller
     public function store(Request $request)
     {
         //capturo el payload
-        //crear el nuevo bootcamp
-        return Bootcamp::create(
+        //crear el nuevo curso
+        return Reviews::create(
               $request->all()
         );
     }
@@ -40,7 +40,7 @@ class bootcampController extends Controller
      */
     public function show($id)
     {
-        return Bootcamp::find($id);
+        return Reviews::find($id);
     }
 
     /**
@@ -53,7 +53,7 @@ class bootcampController extends Controller
     public function update(Request $request, $id)
     {
         //1.Encontrar el bootcamp por Id 
-        $b = Bootcamp::find($id);
+        $b = Reviews::find($id);
         //2.Actualizarlo
         $b -> update($request->all());
         //3.enviar responsive con el bootcamp actualizado
@@ -69,7 +69,7 @@ class bootcampController extends Controller
     public function destroy($id)
     {
         //1. Encontrar el bootcamp a eliminar por id 
-        $b = Bootcamp::find($id);
+        $b = Reviews::find($id);
         //2. Eliminarlo 
         $b -> delete();
         //3. Response con el objeto eliminado

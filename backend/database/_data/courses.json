@@ -1,0 +1,33 @@
+[
+    {
+        "title" : "Español",
+        "description" : "Este es un curso de español",
+        "weeks" : "Tiene una duracion de 3 S",
+        "enroll_cost" : "2.500",
+        "bootcamp_id" : "5",
+        "minimun_skill" : "Junior"
+    }
+
+    ,
+
+    {
+        "title" : "Java",
+        "description" : "Este es un curso de java",
+        "weeks" : "Tiene una duracion de 4 S",
+        "enroll_cost" : "3.500",
+        "bootcamp_id" : "6",
+        "minimun_skill" : "Senior"
+      }
+
+      ,
+
+      {
+        "title" : "PHP",
+        "description" : "Este es un curso de PHP - basico ",
+        "weeks" : "Tiene una duracion de 7 S",
+        "enroll_cost" : "3.000",
+        "bootcamp_id" : "4",
+        "minimun_skill" : "Developement"
+      }
+
+]

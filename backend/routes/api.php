@@ -3,6 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\bootcampController;
+use App\Http\Controllers\coursesController;
+use App\Http\Controllers\reviewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +25,11 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 //Clase Route: Encargada de rutas
 //Metodo apiResource:: Crear rutas de cambio de estado para una entidad
 Route::apiResource('bootcamps',bootcampController::class);
+
+//Clase Route: Encargada de rutas
+//Metodo apiResource:: Crear rutas de cambio de estado para una entidad
+Route::apiResource('courses',coursesController::class);
+
+//Clase Route: Encargada de rutas
+//Metodo apiResource:: Crear rutas de cambio de estado para una entidad
+Route::apiResource('reviews',reviewsController::class);
